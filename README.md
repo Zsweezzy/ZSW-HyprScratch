@@ -116,6 +116,20 @@ pointer and inject input, so run them when you are not using the mouse. `grim`
 is optional and developer-only: `visual.sh` needs it, and one pixel-diff gate
 in `gates.sh` uses it but is skipped when it is missing.
 
+## For AI agents and contributors
+
+- Comments carry the "why", and only the "why". `//!` / `///` document the
+  API; the few inline `//` explain behavior self-evident from the code shape:
+  a `// SAFETY` note, a filter quirk that would silently no-op, a selector
+  caveat that acts on the wrong window.
+- The shell scripts under `scripts/` and `install.sh` carry **no comments on
+  purpose**. Their notes live in [AGENTS.md](AGENTS.md), grouped by file, in
+  the order they appeared. When you change one of those scripts, keep it
+  ShellCheck-clean and update the matching note there rather than re-adding a
+  comment.
+- Local tooling state is not tracked: `/.cocoindex_code/` (CocoIndex Code
+  semantic index) is gitignored.
+
 ## License
 
 MIT — see [LICENSE](LICENSE). Third-party notices are in [NOTICE](NOTICE):
