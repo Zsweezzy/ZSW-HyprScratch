@@ -1,4 +1,4 @@
-# Hypr Scratch
+# ZSW-HyprScratch
 
 A floating iced-glass scratchpad notepad for Hyprland. One persistent note,
 always one keystroke away, saved as plain text. GTK 4, Rust, one binary.
