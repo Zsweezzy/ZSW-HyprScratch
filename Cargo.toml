@@ -1,5 +1,5 @@
 [package]
-name = "hypr-scratch"
+name = "ZSW-HyprScratch"
 version = "1.1.4"
 edition = "2024"
 description = "A floating iced scratchpad notepad for Hyprland"
